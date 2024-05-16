@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction Tracker</title>
+  <link rel="stylesheet" href="Transaction.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Transaction Tracker</h1>
+    <form id="transactionForm">
+      <input type="email" id="emailInput" placeholder="Email">
+      <input type="password" id="passwordInput" placeholder="Password">
+      <input type="text" id="nameInput" placeholder="Name">
+      <input type="number" id="amountInput" placeholder="Amount">
+      <select id="transactionType">
+        <option value="send">Sent</option>
+        <option value="received">Received</option>
+      </select>
+      <input type="datetime-local" id="timeInput" placeholder="Time">
+      <button type="submit">Add Transaction</button>
+    </form>
+    <input type="text" id="searchInput" placeholder="Search transactions...">
+    <div id="transactionList"></div>
+  </div>
+  <script src="Transaction.js"></script>
+</body>
+</html>
